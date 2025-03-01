@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { CounterComponent } from './counter/counter.component';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
+import { WeatherToolComponent } from './weather-tool/weather-tool.component';
 
 export const routes: Routes = [
   {
@@ -12,6 +13,10 @@ export const routes: Routes = [
       {
         path: 'cookie-consent',
         component: CookieConsentComponent,
+      },
+      {
+        path: 'weather-tool',
+        component: WeatherToolComponent,
       },
     ],
   },

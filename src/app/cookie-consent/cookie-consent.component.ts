@@ -46,10 +46,6 @@ export class CookieConsentComponent {
   }
 
   get cookieConsentState(): 'enter' | 'leave' | 'hidden' {
-    console.log(
-      '🚀 ~ CookieConsentComponent ~ getcookieConsentState ~ this.isCookieConsentAccepted:',
-      this.isCookieConsentAccepted
-    );
     if (this.isCookieConsentAccepted === null) {
       return 'hidden';
     } else if (!this.isCookieConsentAccepted) {
