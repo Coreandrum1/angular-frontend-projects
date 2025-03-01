@@ -1,0 +1,20 @@
+<div [className]="'cookie-consent-popup'" [@fadeInOut]="cookieConsentState">
+  <div class="cookie-consent-popup__content">
+    <p class="cookie-consent-popup__message">
+      We use cookies to ensure you get the best experience on our website. By
+      using our website you agree to our
+      <a href="/privacy-policy" class="cookie-consent-popup__link"
+        >Privacy Policy</a
+      >
+    </p>
+    <button class="cookie-consent-popup__button" (click)="acceptCookies()">
+      Accept
+    </button>
+  </div>
+</div>
+@if (isCookieConsentAccepted) {
+<div>
+  <p>Cookie consent accepted</p>
+  <button (click)="resetCookies()">Reset Cookie Consent</button>
+</div>
+}

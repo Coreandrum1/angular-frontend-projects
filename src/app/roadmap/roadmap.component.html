@@ -1,0 +1,12 @@
+<h1>Angular Roadmap</h1>
+<p>A couple of projects made in Angular</p>
+
+<ul>
+  <li><a [routerLink]="'/activities/counter'">Counter</a></li>
+  <li><a [routerLink]="'/activities/cookie-consent'">Cookie Consent</a></li>
+  @if (getCurrentRoute !== '/activities') {
+  <li><a [routerLink]="'/activities/counter/counter1'">Go Back</a></li>
+  }
+</ul>
+
+<router-outlet></router-outlet>

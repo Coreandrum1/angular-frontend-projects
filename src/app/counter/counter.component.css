@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex: 1;
+
+  p {
+    margin: 4px 8px;
+  }
+}
